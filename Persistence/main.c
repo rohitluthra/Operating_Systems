@@ -28,8 +28,6 @@ Description:
           simple way to access devices through its system calls.
 
     - Thus, the OS is sometimes seen as a standard library.
-
-
 */
 int main(int argc, char* argv[])
 {
@@ -49,7 +47,7 @@ int main(int argc, char* argv[])
   char buffer[40];
 
    /* function int sprintf(char *str, const char *format, ...) sends formatted output to a string pointed to, by str */
-   
+
   sprintf(buffer, "This string will go in buffer");
 
   int rc = write(fd, buffer, strlen(buffer));
