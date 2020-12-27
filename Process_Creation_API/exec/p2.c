@@ -33,8 +33,10 @@ int main (int argc, char * argv [])
   }
   else{
 
+    int rc_wait = wait(NULL); // Waits for any child process to finish before continuing.
+
     // Parent process entry path
-    printf("Parent Process successfully created, it's PID is %d \n", getpid());
+    printf("Child: %d, rc_wait: %d  (Parent Pid: %d)",rc, rc_wait, getpid());
   }
 
   return 0;
